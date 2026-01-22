@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "build:bun": "bun --bun next build",
+    "preview": "npx wrangler pages dev ./out",
     "start": "next start",
     "lint": "eslint"
   },
@@ -31,6 +32,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.0.10",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.60.0"
   }
 }

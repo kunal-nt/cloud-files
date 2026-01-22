@@ -7,6 +7,7 @@
     "build": "next build",
     "build:bun": "bun --bun next build",
     "preview": "npx wrangler pages dev ./out",
+    "deploy": "wrangler pages deploy out",
     "start": "next start",
     "lint": "eslint"
   },

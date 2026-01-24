@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
+  output: "export", // REQUIRED FOR CLOUDFLARE PAGES
+
   images: {
+    unoptimized: true, // REQUIRED
     remotePatterns: [
       {
         protocol: "https",

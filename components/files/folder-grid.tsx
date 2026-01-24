@@ -33,9 +33,9 @@ export function FolderGrid() {
         {folders.map((folder) => (
           <Link
             key={folder.id}
-            href={`/folder/${folder.id}`}
+            href={`/folder?id=${folder.id}`}
             className={cn(
-              "p-4 rounded-xl border bg-card hover:bg-accent/50 transition-all cursor-pointer group block"
+              "p-4 rounded-xl border bg-card hover:bg-accent/50 transition-all cursor-pointer group block",
             )}
           >
             <div className="flex items-start justify-between mb-3">
@@ -58,7 +58,10 @@ export function FolderGrid() {
                       className="size-7"
                       onClick={(e) => e.preventDefault()}
                     >
-                      <HugeiconsIcon icon={MoreVerticalIcon} className="size-4" />
+                      <HugeiconsIcon
+                        icon={MoreVerticalIcon}
+                        className="size-4"
+                      />
                     </Button>
                   }
                 />
@@ -85,4 +88,3 @@ export function FolderGrid() {
     </div>
   );
 }
-

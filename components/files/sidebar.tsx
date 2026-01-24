@@ -156,7 +156,7 @@ export function FilesSidebar({
                       icon={ArrowDown01Icon}
                       className={cn(
                         "size-3 transition-transform",
-                        !foldersOpen && "-rotate-90"
+                        !foldersOpen && "-rotate-90",
                       )}
                     />
                     <span>Folders</span>
@@ -178,8 +178,8 @@ export function FilesSidebar({
                   {folders.map((folder) => (
                     <SidebarMenuItem key={folder.id}>
                       <SidebarMenuButton
-                        render={<Link href={`/folder/${folder.id}`} />}
-                        isActive={pathname === `/folder/${folder.id}`}
+                        render={<Link href={`/folder?id=${folder.id}`} />}
+                        isActive={pathname === `/folder`}
                         className="h-9"
                       >
                         <HugeiconsIcon

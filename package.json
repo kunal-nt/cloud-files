@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "preview": "wrangler pages dev ./out",
+    "preview": "wrangler pages dev out",
     "deploy": "wrangler pages deploy out",
     "start": "next start",
     "lint": "eslint"
